@@ -1,4 +1,4 @@
-nc localhost 5000 /home/marina/logs/*.log
+nc localhost 5000 < /home/marina/logs/*.log
 
 
 
