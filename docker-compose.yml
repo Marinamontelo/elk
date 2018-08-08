@@ -23,6 +23,7 @@ services:
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
     ports:
       - "5000:5000"
+      - "127.0.0.1:12201:12201/udp"      
     environment:
       LS_JAVA_OPTS: "-Xmx256m -Xms256m"
     networks:
